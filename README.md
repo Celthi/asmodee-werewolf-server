@@ -1,4 +1,4 @@
-Werewolves of Miller's Hollow [![Build Status](https://travis-ci.org/takashiro/asmodee-werewolf-server.svg?branch=dev)](https://travis-ci.org/takashiro/asmodee-werewolf-server)
+Werewolves of Miller's Hollow ![Node.js CI](https://github.com/takashiro/asmodee-werewolf-server/workflows/Node.js%20CI/badge.svg)
 ==========
 
 | Example Page |    https://werewolf.takashiro.cn      |
@@ -6,7 +6,7 @@ Werewolves of Miller's Hollow [![Build Status](https://travis-ci.org/takashiro/a
 | Author       |           Kazuichi Takashiro          |
 
 
-Lisense
+License
 -------
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -33,4 +33,4 @@ WeChat App: https://github.com/takashiro/asmodee-werewolf-wechat
 Running Environment
 -------------------
 1. Nginx
-2. Node v8 or later versions
+2. Node v12 or later versions
