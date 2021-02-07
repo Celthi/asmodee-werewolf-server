@@ -5,19 +5,12 @@
   "main": "dist/app.js",
   "bin": "dist/cli.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "node app.js",
-    "test": "npx eslint . && node test",
-    "debug": "nodemon --legacy-watch --watch . --inspect=0.0.0.0:9222 --nolazy ./app.js",
-    "docker-debug": "docker-compose up"
-=======
     "start": "node dist/cli.js",
     "build": "rimraf dist && tsc",
     "debug": "tsc --incremental --sourceMap",
     "test": "npm run lint && npm run jest",
     "lint": "eslint --ext=ts,js .",
     "jest": "jest"
->>>>>>> 9453875de369d8d210f9845ac9f788642a8ccf0c
   },
   "repository": {
     "type": "git",
@@ -36,11 +29,6 @@
     "nconf": "^0.10.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "eslint": "^5.16.0",
-    "nodemon": "^1.11.0"
-  }
-=======
     "@types/jest": "^26.0.19",
     "@types/node": "^14.14.19",
     "@types/supertest": "^2.0.10",
@@ -63,5 +51,4 @@
   "files": [
     "dist"
   ]
->>>>>>> 9453875de369d8d210f9845ac9f788642a8ccf0c
 }
