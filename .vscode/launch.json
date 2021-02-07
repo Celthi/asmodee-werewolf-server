@@ -36,16 +36,36 @@
 			"type": "node",
 			"request": "launch",
 			"name": "Launch Program",
-			"program": "${workspaceFolder}/app.js"
+			"preLaunchTask": "npm: debug",
+			"program": "${workspaceFolder}/src/cli.ts",
+			"outFiles": [
+				"${workspaceFolder}/dist/**/*.js"
+			]
 		},
 		{
+			"name": "Debug Test",
 			"type": "node",
 			"request": "launch",
+<<<<<<< HEAD
 			"name": "Launch Test",
 			"program": "${workspaceFolder}/test.js",
 			"args": [
 				"--local-debug"
 			]
+=======
+			"runtimeArgs": [
+				"--inspect-brk",
+				"${workspaceFolder}/node_modules/jest/bin/jest.js",
+				"--runInBand",
+				"--coverage=false",
+				"--no-cache",
+				"${fileBasenameNoExtension}"
+			],
+			"disableOptimisticBPs": true,
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen",
+			"port": 9229
+>>>>>>> 9453875de369d8d210f9845ac9f788642a8ccf0c
 		}
 	]
 }
